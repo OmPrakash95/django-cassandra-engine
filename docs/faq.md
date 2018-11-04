@@ -17,7 +17,7 @@ If you use `django_cassandra_engine` as your default backend:
 
 ``` python
     # project/tasks.py
-    from celery.signals import worker_init
+    from celery.signals import worker_process_init
     from django.db import connection
 
     @worker_process_init.connect
